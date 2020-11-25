@@ -407,10 +407,9 @@ hr.line1 {
 	margin: auto;
 	display: block;
 	padding: 0px;
-	padding-right: 1em;
-	padding-left: 1em;
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
+	width: 60%;
 	transition: all ease 2s;
 	-webkit-transform: all ease 2s; 
 	-moz-transition: all ease 2s
