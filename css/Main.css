@@ -326,7 +326,7 @@ hr.line1 {
 }
 
 #logoRow {
-	margin-top: 6em;
+	margin-top: 3em;
 	display: flex;
 }
 
@@ -337,7 +337,7 @@ hr.line1 {
 }
 
 #webRow {
-	margin-top: 5.5em;
+	margin-top: 3em;
 }
 
 #webImg {
@@ -849,6 +849,10 @@ hr.line3 {
 #showBtn:active {
 	outline: none;
 	text-decoration: none;
+}
+
+.digitalSpacing {
+	margin-bottom: 1em !important;
 }
 
 /* LOGO DESIGN PAGE */
