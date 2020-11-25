@@ -271,6 +271,11 @@ hr.line1 {
 
 #designTitle {
 	width: 90%;
+	margin-bottom: 3em;
+}
+
+#designTitleMobile {
+	display: none;
 }
 
 #titleText {
@@ -455,6 +460,14 @@ hr.line1 {
 	font-size: 3vw;
 	margin: auto;
 	display: block;
+}
+
+#reelRow {
+	margin-top: 3em;
+}
+
+#descriptDiv {
+	margin-top: 2em;
 }
 
 /* Slideshow Videos */
@@ -895,6 +908,7 @@ hr.line3 {
 	width: 90%;
 	margin: auto;
 	display: block;
+	margin-bottom: 3em;
 }
 
 #waifulogo1 {
@@ -912,6 +926,7 @@ hr.line3 {
 	width: 60%;
 	margin: auto;
 	display: block;
+	margin-bottom: 3em;
 }
 
 #applogo1 {
@@ -924,7 +939,12 @@ hr.line3 {
 	width: 40%;
 	margin: auto;
 	display: block;
+	margin-bottom: 1em;
 }
+
+#colorpalette {
+		margin-bottom: 3em;
+	}
 
 /* RESUME */
 /* Resume */
@@ -955,6 +975,11 @@ hr.line3 {
 	display: block;
 	padding: 3em;
 }
+
+#videoRow {
+	margin-top: 2em;
+}
+
 /* Slideshow Videos */
 
 #orphiriaVid {

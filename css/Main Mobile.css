@@ -22,13 +22,15 @@
 	}
 	
 	.navLink {
-		font-size: 3vw;
+		font-size: 4vw;
 		margin-top: .5em;
+		padding: 2vw 0;
 	}
 	
 	.navLinkActive {
-		font-size: 3vw;
+		font-size: 4vw;
 		margin-top: .5em;
+		padding: 2vw 0;
 	}
 
 	.navbar-nav {
@@ -40,7 +42,7 @@
 	}
 	
 	#subText {
-		font-size: 2vw;
+		font-size: 3vw;
 	}
 	
 	#midcolor {
@@ -52,7 +54,11 @@
 	}
 	
 	#linkedLogo {
-		width: 30%;
+		width: 50%;
+	}
+	
+	hr.line1 {
+			margin-bottom: 10px;
 	}
 }
 
@@ -67,7 +73,7 @@
 	}
 	
 	#paraAbout {
-		font-size: 3.3vw;
+		font-size: 4vw;
 	}
 	
 	#textColmMobile {
@@ -92,6 +98,17 @@
 	
 	#socialTxt {
 		font-size: 3vw;
+	}
+}
+
+/* ANIMATION */
+@media screen and (max-width: 600px) {
+	#reelRow {
+		margin-top: 0em;
+	}
+	
+	#descriptDiv {
+		margin-top: .5em;
 	}
 }
 
@@ -131,7 +148,7 @@
 	}
 	
 	#digitalmainText {
-		font-size: 3vw;
+		font-size: 4vw;
 	}
 	
 	hr.line2 {
@@ -152,16 +169,33 @@
 	
 	.targetDiv {
 		padding: .8em;
+		padding-top: 0em;
 	}
 	
 	#descripRow {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
+	
+	#finalLogo {
+		margin-bottom: 1em;
+	}
+	
+	#waifuColor {
+		margin-bottom: 2em;
+	}
+	
+	#apprenticeColor {
+		margin-bottom: 1em;
+	}
+	
+	#colorpalette {
+		margin-bottom: 1em;
+	}
 }
 
 
-/* MAIN PAGE */
+/* INDEX */
 @media screen and (max-width: 600px) {
 	#mainText {
 		font-size: 4vw;
@@ -216,6 +250,17 @@
 		padding-right: 2em;
 		padding-left: 2em;
 	}
+	
+	#designTitle {
+		display: none;
+	}
+	
+	#designTitleMobile {
+		display: block;
+		width: 95%;
+		margin-bottom: 2em;
+	}
+	
 }
 
 /* RESUME */
@@ -223,7 +268,7 @@
 	#midcolorResume {
 		padding: 0em;
 		padding-top: 2em;
-		padding-bottom: 70px;
+		padding-bottom: 30px;
 	}
 	
 	#resumeFrame {
@@ -249,6 +294,7 @@
 	
 	#descriptText {
 		font-size: 4vw;
+		margin-bottom: .5em;
 	}
 	
 	#midcolorVideo {
@@ -259,6 +305,10 @@
 	
 	#orphiriaVid {
 		padding: 0em;
+	}
+	
+	#videoRow {
+		margin-top: 0em;
 	}
 }
 
