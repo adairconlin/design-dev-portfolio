@@ -124,7 +124,7 @@ hr.line1 {
 
 .navLink:focus {
 	outline: none;
-	text-decoratoin: none;
+	text-decoration: none;
 }
 
 .navLink active:focus {
