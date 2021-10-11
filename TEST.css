@@ -279,7 +279,7 @@ section h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .preview img {
