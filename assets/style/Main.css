@@ -1,17 +1,3 @@
-/*:root {
-	--primary-color: #cdbcb5;
-	--secondary-color: #c5c6c0;
-	--tertiary-color: #b59191;
-	--accent-color: #3a2c29;
-} 
-
-:root {
-	--primary-color: #EFEFEF;
-	--secondary-color: #90A3A7;
-	--tertiary-color: #395159;
-	--accent-color: #23303D;
-}*/
-
 :root {
 	--primary-color: #D8D5D0;
 	--secondary-color: #D0C2A7;
@@ -23,131 +9,74 @@ html {
   scroll-behavior: smooth;
 }
 
-#background {
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
     background-color: var(--primary-color);
-}
-
-#midcolor {
-	width: 90%;
-	margin: auto;
-	display: block;
-	padding: 3em;
-}
-
-#midcolorTitle {
-	background-color: var(--secondary-color);
-	width: 90%;
-	margin: auto;
-	display: block;
-	padding: 3em;
-	padding-bottom: 1em;
-}
-
-hr.line1 {
-	border: 1px solid var(--tertiary-color);
-	width: 90%;
-	margin: auto;
-	margin-bottom: 15px;
-	display: block;
-}
-
-#linkBtn:hover {
-	text-decoration: none;
-}
-
-/* Nav Bar */
-#titleIcon {
-	width: 90%;
-}
-
-#titleDiv {
-	max-width: 20vw;
-}
-
-#myNavbar {
-	width: 90%;
-	margin: auto;
-	display: flex;
-}
-
-#toggleIcon {
-	width: 5vw;
-}
-
-#toggleBtn:focus {
-	outline: none;
-}
-
-#toggleBtn:active {
-	outline: none;
-}
-
-#navbarItems {
-	float: right;
-	margin: auto;
-	display: flex;
-}
-
-/* Nav Buttons */
-.navLink {
-	background-color: var(--primary-color);
-	color: var(--tertiary-color);
-	border: none;	
-	font-family: freightneocnd-pro, sans-serif;
-	font-weight: 400;
+	font-family: halyard-display, sans-serif;
 	font-style: normal;
-	font-size: 1.9vw;
-	margin-right: 5px;
-	margin-top: 20px;
-    padding-bottom: 0px;
-	transition: all ease 1s;
 }
 
-.navLinkActive {
-	background-color: var(--primary-color);
-	color: var(--accent-color);
-	border: none;	
-	font-family: freightneocnd-pro, sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 1.9vw;
-	margin-right: 5px;
-	margin-top: 20px;
-    padding-bottom: 0px;
-	text-decoration: none;
+a:hover {
+    transition: .7s;
+    text-decoration: none;
+    color: var(--accent-color);
 }
 
-.navLink:hover {
-	color: var(--accent-color);
-	text-decoration: none;
+/* HEADER / NAVIGATION */
+header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+    margin: 0 60px 0 60px;
 }
 
-.navLink:focus {
-	outline: none;
-	text-decoration: none;
+header h1 a {
+	font-size: 56px;
+	font-weight: 500px;
+    color: var(--tertiary-color);
 }
 
-.navLink active:focus {
-	outline: none;
-	text-decoratoin: none;
+header nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+    align-items: center;
+	list-style: none;
+    margin-top: 15px;
 }
 
-.navLinkActive:hover {
-	color: var(--accent-color);
-	text-decoration: none;
+header nav ul li a {
+    color: var(--tertiary-color);
+    font-size: 28px;
+    margin: 20px;
 }
 
-.navLinkActive:focus {
-	outline: none;
-	text-decoratoin: none;
+/* FOOTER */
+footer {
+    background-color: var(--tertiary-color);
+    display: flex;
+    flex-wrap: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 60px 10px 60px;
 }
 
-.navLinkActive active:focus {
-	outline: none;
-	text-decoratoin: none;
+footer h3 {
+    color: var(--secondary-color);
+    font-size: 36px;
 }
 
+footer a {
+    color: var(--primary-color);
+    font-size: 24px;
+}
 
+/* NOT FIXED */
 /* MAIN PAGE */
 /* Button "Digital Portraits" */
 #buttcont {
@@ -160,9 +89,6 @@ hr.line1 {
 	background-color: var(--primary-color);
 	color: var(--tertiary-color);
 	border: none;
-	font-family: freightneocnd-pro, sans-serif;
-	font-weight: 400;
-	font-style: normal;
 	font-size: 3vw;
 	margin: auto;
 	display: block;
@@ -208,9 +134,6 @@ hr.line1 {
 
 #overTxt {
 	color: var(--tertiary-color);
-	font-family: freightneocnd-pro, sans-serif;
-	font-weight: 400;
-	font-style: italic;
 	position: absolute;
 	font-size: 3.5vw;
 }
@@ -295,9 +218,6 @@ hr.line1 {
 
 #titleText {
 	color: var(--accent-color);
-	font-family: freightneocnd-pro, sans-serif;
-	font-weight: 400;
-	font-style: normal;
 	font-size: 4vw;
 }
 
@@ -311,9 +231,6 @@ hr.line1 {
 
 #mainText {
 	color: var(--accent-color);
-	font-family: freightneocnd-pro, sans-serif;
-	font-weight: 400;
-	font-style: normal;
 	font-size: 2vw;
 }
 
@@ -397,9 +314,6 @@ hr.line1 {
 
 #descriptText {
 	color: var(--accent-color);
-	font-family: freightneocnd-pro, sans-serif;
-	font-weight: 400;
-	font-style: normal;
 	font-size: 2vw;
 }
 
@@ -415,9 +329,6 @@ hr.line1 {
 	border: 1px solid;
 	border-radius: 0rem;
 	border-color: var(--tertiary-color);
-	font-family: freightneocnd-pro, sans-serif;
-	font-weight: 400;
-	font-style: normal;
 	font-size: 4vw;
 	margin: auto;
 	display: block;
@@ -440,9 +351,6 @@ hr.line1 {
 
 #midLine {
 	color: var(--tertiary-color);
-	font-family: freightneocnd-pro, sans-serif;
-	font-weight: 100;
-	font-style: normal;
 	font-size: 120px;
 	margin: auto;
 	display: block;
@@ -458,9 +366,6 @@ hr.line1 {
 
 #headerText {
 	color: var(--accent-color);
-	font-family: freightneocnd-pro, sans-serif;
-	font-weight: 400;
-	font-style: normal;
 	font-size: 3.7vw;
 	margin: auto;
 	display: block;
@@ -468,9 +373,6 @@ hr.line1 {
 
 #subheaderText {
 	color: var(--tertiary-color);
-	font-family: freightneocnd-pro, sans-serif;
-	font-weight: 400;
-	font-style: normal;
 	font-size: 3vw;
 	margin: auto;
 	display: block;
@@ -549,9 +451,6 @@ hr.line1 {
 
 #abtHead {
 	color: var(--accent-color);
-	font-family: freightneocnd-pro, sans-serif;
-	font-weight: 400;
-	font-style: normal;
 	font-size: 3vw;
 	text-decoration: none;
 }
@@ -568,9 +467,6 @@ hr.line1 {
 
 #paraAbout {
 	color: var(--tertiary-color);
-	font-family: freightneocnd-pro, sans-serif;
-	font-weight: 400;
-	font-style: normal;
 	font-size: 1.6vw;
 	text-decoration: none;
 }
@@ -603,9 +499,6 @@ hr.line1 {
 
 #socialTxt {
 	color: var(--tertiary-color);
-	font-family: freightneocnd-pro, sans-serif;
-	font-weight: 400;
-	font-style: normal;
 	font-size: 2vw;
 	text-decoration: none;
 	text-align: center;
@@ -638,9 +531,6 @@ hr.line1 {
 	color: var(--tertiary-color);
 	border: 1px solid var(--tertiary-color);
 	background: none;
-	font-family: freightneocnd-pro, sans-serif;
-	font-weight: 400;
-	font-style: normal;
 	font-size: 3vw;
 	padding-right: 20px;
 	padding-left: 20px;
@@ -659,9 +549,6 @@ hr.line1 {
 #dropdownContent {
 	display: none;
 	position: absolute;
-	font-family: freightneocnd-pro, sans-serif;
-	font-weight: 400;
-	font-style: normal;
 	font-size: 2vw;
 	background-color: var(--accent-color);
 	min-width: 3em;
@@ -714,9 +601,6 @@ hr.line1 {
 
 #headerText {
 	color: var(--accent-color);
-	font-family: freightneocnd-pro, sans-serif;
-	font-weight: 400;
-	font-style: normal;
 	font-size: 3.7vw;
 	margin: auto;
 	display: inline;
@@ -797,8 +681,6 @@ hr.line3 {
 
 #headText {
 	color: var(--accent-color);
-	font-family: freightneocnd-pro, sans-serif;
-	font-weight: 600;
 	font-style: italic;
 	font-size: 3.5vw;
 	margin: auto;
@@ -807,9 +689,6 @@ hr.line3 {
 
 #digitalmainText {
 	color: var(--accent-color);
-	font-family: freightneocnd-pro, sans-serif;
-	font-weight: 400;
-	font-style: normal;
 	font-size: 2.2vw;
 	margin: auto;
 	display: flex;
@@ -817,9 +696,6 @@ hr.line3 {
 
 #subText {
 	color: var(--accent-color);
-	font-family: freightneocnd-pro, sans-serif;
-	font-weight: 400;
-	font-style: normal;
 	font-size: 1.4vw;
 	margin: auto;
 	display: block;
@@ -844,9 +720,6 @@ hr.line3 {
 	padding-right: 20px;
 	background: none;
 	color: var(--accent-color);
-	font-family: freightneocnd-pro, sans-serif;
-	font-weight: 400;
-	font-style: normal;
 	font-size: 1.5vw;
 	transition: all ease 1s;
 }
@@ -887,9 +760,6 @@ hr.line3 {
 
 #logoheaderText {
 	color: var(--accent-color);
-	font-family: freightneocnd-pro, sans-serif;
-	font-weight: 400;
-	font-style: normal;
 	font-size: 3.7vw;
 	margin: auto;
 	display: inline;
@@ -1085,9 +955,6 @@ hr.line3 {
 
 #footText {
 	color: var(--tertiary-color);
-	font-family: freightneocnd-pro, sans-serif;
-	font-weight: 400;
-	font-style: normal;
 	font-size: 2vw;
 }
 
@@ -1107,9 +974,6 @@ hr.line3 {
 
 #logoText {
 	color: var(--tertiary-color);
-	font-family: freightneocnd-pro, sans-serif;
-	font-weight: 400;
-	font-style: normal;
 	font-size: 1.5vw;
 	text-align: center;
 	margin: auto;

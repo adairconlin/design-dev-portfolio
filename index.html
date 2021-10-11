@@ -13,40 +13,32 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	</head>
-	<body id="background">
-		<nav class="navbar navbar-expand-lg justify-content-center align-self-center" id="myNavbar">
-			<!--AC Title Logo-->
-			<!-- FIX 
-				<a href="index.html" class="mr-auto" id="titleDiv"><img class="img-fluid" src="assets/media/images/AC Title.png" alt="" id="titleIcon"></a>	-->
-			<!--Collapse Button-->
-			<button class="navbar-toggler" id="toggleBtn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<img src="assets/media/images/toggle-icon.png" alt="" id="toggleIcon">
-			</button>
-			<!--Navbar Items-->
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav ml-auto">
-					<li class="navItem">
-						<a href="index.html#designsection" id="linkBtn"><button class="navLink" href="#">Design<span class="sr-only">(current)</span></button></a>
-					</li>
-					<li class="navItem">
-						<a href="DigitalPaintings.html" id="linkBtn"><button class="navLink" href="#">Digital Art</button></a>
-					</li>
-					<li class="navItem">
-						<a href="index.html#animation" id="linkBtn"><button class="navLink" href="#">Animation</button></a>
-					</li>
-					<li class="navItem">
-						<a href="AboutMe.html" id="linkBtn"><button class="navLink" href="#">About</button></a>
-					</li>
-					<li class="navItem">
-						<a href="Resume.html" id="linkBtn"><button class="navLink" href="#">Resume</button></a>
-					</li>
-					<li class="navItem">
-						<a href="#mycontact" id="linkBtn"><button class="navLink" href="#">Contact</button></a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		<hr class="line1">
+	<body>
+		<header>
+            <h1>
+                <a href="/">Adair Conlin</a>
+            </h1>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html#design">Design</a>
+                    </li>
+                    <li>
+                        <a href="DigitalPaintings.html">Digital Painting</a>
+                    </li>
+                    <li>
+                        <a href="index.html#animation">Animation</a>
+                    </li>
+                    <li>
+                        <a href="AboutMe.html">About</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact Me</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 		
 		<!--Design-->
 		<div class="container-fixed" id="midcolor">
@@ -234,25 +226,13 @@
 		</div><br>
 		
 		<!--Footer-->
-		<div class="container-fixed" id="mycontact">
-			<div class="row justify-content-center align-self-center" id="footWrapper">
-				<div class="col-3" id="footdiv">
-					<a href="mailto:adair.conlin@gmail.com"><img src="assets/media/images/email.png" alt="n" id="linkedLogo"></a>
-					<p id="logoText">adair.conlin@gmail.com</p>
-				</div>
-				<div class="col-3" id="footdiv">
-					<a href="https://www.linkedin.com/in/adair-conlin-225035176/"><img src="assets/media/images/linkedlogo.png" alt="" id="linkedLogo"></a>
-					<p id="logoText">Adair Conlin</p>
-				</div>
-				<div class="col-3" id="footdiv">
-					<a href="https://www.instagram.com/sappystudios_/"><img src="assets/media/images/instalogo.png" alt="" id="linkedLogo"></a>
-					<p id="logoText">Sappy Studios</p>
-				</div>
-				<div class="col-3" id="footdiv">
-					<a href="https://www.instagram.com/its_dair/"><img src="assets/media/images/instalogo.png" alt="" id="linkedLogo"></a>
-					<p id="logoText">Personal Instagram</p>
-				</div>
-			</div>
-		</div>
+		<footer id="contact">
+            <h3>Contact Me:</h3>
+            <a href="adair.conlin@gmail.com">adair.conlin@gmail.com</a>
+            <a href="https://www.linkedin.com/in/adair-conlin/">LinkedIn</a>
+            <a href="https://github.com/adairconlin/">GitHub</a>
+
+            <h3>Thanks for stopping by!</h3>
+        </footer>
 	</body>
 </html>
