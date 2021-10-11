@@ -32,11 +32,11 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-    margin: 0 60px 0 60px;
+    margin: 0 60px 40px 60px;
 }
 
 header h1 a {
-	font-size: 56px;
+	font-size: 64px;
 	font-weight: 500px;
     color: var(--tertiary-color);
 }
@@ -75,6 +75,51 @@ footer a {
     color: var(--primary-color);
     font-size: 24px;
 }
+
+/* BODY */
+section {
+    background-color: var(--secondary-color);
+    position: relative;
+	display: flex;
+    margin: 0 60px 80px 60px;
+}
+
+section article {
+    background-color: var(--primary-color);
+    position: absolute;
+    padding: 10px 30px 20px 40px;
+    margin-top: 50px;
+    flex: 1;
+    top: 0;
+    z-index: 9999;
+}
+
+section .right {
+    right: 0;
+}
+
+section a {
+    font-size: 56px;
+    color: var(--tertiary-color);
+    text-decoration: none;
+}
+
+section p {
+    font-size: 18px;
+    color: var(--accent-color)
+}
+
+img {
+    width: 100%;
+    opacity: .7;
+    object-fit: cover;
+    transition: .6s;
+}
+
+img:hover {
+    opacity: 1;
+}
+
 
 /* NOT FIXED */
 /* MAIN PAGE */
