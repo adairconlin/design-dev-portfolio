@@ -21,8 +21,11 @@ body {
 	font-style: normal;
 }
 
+a {
+    transition: .7s ease;
+}
+
 a:hover {
-    transition: .7s;
     text-decoration: none;
     color: var(--accent-color);
 }
@@ -103,7 +106,6 @@ footer a {
     width: 80%;
 }
 
-
 section:not(:first-of-type) {
     background-color: var(--secondary-color);
     position: relative;
@@ -115,7 +117,7 @@ section:not(:first-of-type) {
 section article {
     background-color: var(--primary-color);
     position: absolute;
-    padding: 10px 30px 20px 40px;
+    padding: 10px 30px 20px 30px;
     margin-top: 50px;
     flex: 1;
     top: 0;
@@ -124,6 +126,8 @@ section article {
 
 section .right {
     right: 0;
+    text-align: right;
+    padding: 10px 30px 20px 30px;
 }
 
 section a {
@@ -131,6 +135,7 @@ section a {
     color: var(--tertiary-color);
     text-decoration: none;
     width: 100%;
+    height: 700px;
 }
 
 section p {
@@ -144,10 +149,29 @@ section video {
     height: 700px;
     object-fit: cover;
     opacity: .7;
-    transition: .6s;
+    transition: .6s ease;
 }
 
 section img:hover,
 section video:hover {
     opacity: 1;
+}
+
+/* ABOUT SECTION - HOMEPAGE */
+#about {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 150px 150px 150px; 
+}
+
+#about a {
+    color: var(--accent-color);
+    font-size: 64px;
+    height: auto;
+}
+
+#about a:hover {
+    color: var(--secondary-color);
 }
