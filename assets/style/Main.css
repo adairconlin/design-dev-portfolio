@@ -27,22 +27,22 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: var(--accent-color);
+    color: var(--tertiary-color);
 }
 
 /* HEADER / NAVIGATION */
 header {
+    background-color: var(--accent-color);
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-    margin: 0 60px 40px 60px;
-    border-bottom: 5px solid var(--secondary-color);
+    padding: 0 300px 0 300px;
 }
 
 header h1 a {
-	font-size: 64px;
+	font-size: 28px;
 	font-weight: 500px;
-    color: var(--tertiary-color);
+    color: var(--secondary-color);
 }
 
 header nav ul {
@@ -55,9 +55,9 @@ header nav ul {
 }
 
 header nav ul li a {
-    color: var(--tertiary-color);
+    color: var(--secondary-color);
     font-size: 28px;
-    margin: 20px;
+    padding: 20px;
 }
 
 /* FOOTER */
@@ -82,20 +82,22 @@ footer a {
 
 /* BODY */
 .hero {
+    background-color: var(--accent-color);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 0 150px 50px 150px;
+    margin-bottom: 50px;
+    padding: 25px 300px 50px 300px;
 }
 
 .hero h1 {
-    color: var(--accent-color);
+    color: var(--secondary-color);
     font-size: 64px;
     width: 100%;
 }
 
 .hero h2 {
-    color: var(--accent-color);
+    color: var(--secondary-color);
     font-size: 3.3em;
     width: 90%;
 }
@@ -104,6 +106,7 @@ footer a {
     color: var(--tertiary-color);
     font-size: 2em;
     width: 80%;
+    margin-bottom: 20px;
 }
 
 section:not(:first-of-type) {
@@ -111,7 +114,7 @@ section:not(:first-of-type) {
     position: relative;
 	display: flex;
     flex-direction: row;
-    margin: 0 60px 50px 60px;
+    margin: 0 300px 50px 300px;
 }
 
 section article {
@@ -163,12 +166,12 @@ section video:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 20px 150px 150px 150px; 
+    margin: 0 350px 60px 350px; 
 }
 
 #about a {
-    color: var(--accent-color);
-    font-size: 64px;
+    color: var(--tertiary-color);
+    font-size: 2em;
     height: auto;
 }
 
