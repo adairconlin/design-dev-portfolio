@@ -78,12 +78,38 @@ footer a {
 }
 
 /* BODY */
-section {
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 150px 50px 150px;
+}
+
+.hero h1 {
+    color: var(--accent-color);
+    font-size: 64px;
+    width: 100%;
+}
+
+.hero h2 {
+    color: var(--accent-color);
+    font-size: 3.3em;
+    width: 90%;
+}
+
+.hero h3 {
+    color: var(--tertiary-color);
+    font-size: 2em;
+    width: 80%;
+}
+
+
+section:not(:first-of-type) {
     background-color: var(--secondary-color);
     position: relative;
 	display: flex;
     flex-direction: row;
-    margin: 0 60px 80px 60px;
+    margin: 0 60px 50px 60px;
 }
 
 section article {
@@ -104,6 +130,7 @@ section a {
     font-size: 56px;
     color: var(--tertiary-color);
     text-decoration: none;
+    width: 100%;
 }
 
 section p {
