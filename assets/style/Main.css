@@ -171,11 +171,87 @@ section video:hover {
 
 #about a {
     color: var(--accent-color);
-    font-size: 64px;
+    font-size: 48px;
     height: auto;
 }
 
 #about a:hover {
+    color: var(--secondary-color);
+}
+
+/* BRANDDESIGN.HTML */
+.design,
+.show {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.design {
+    background-color: var(--accent-color) !important;
+}
+
+.show {
+    background-color: var(--primary-color) !important;
+}
+
+.design h2 {
+    color: var(--secondary-color);
+    font-size: 86px;
+    margin: 64px;
+    padding-bottom: 60px;
+}
+
+.design div {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.design button {
+    justify-content: center;
+    margin: 0 10px;
+    font-size: 36px;
+    padding: 0 25px;
+    border: none;
+    color: var(--secondary-color);
+    background-color: var(--accent-color);
+    border-radius: 10px 10px 0 0;
+}
+
+.design button:active {
+    outline: none;
+}
+
+.design div .active {
+    color: var(--accent-color);
+    background-color: var(--primary-color);
+    outline: none;
+}
+
+.hide {
+    display: none !important;
+}
+
+.show img {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.show p {
+    font-size: 36px;
+    padding: 35px 0;
+    color: var(--tertiary-color);
+}
+
+.show p a {
+    font-size: 36px;
+    transition: .5s ease;
+}
+
+.show p a:hover {
     color: var(--secondary-color);
 }
 
