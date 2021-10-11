@@ -261,6 +261,28 @@ section p {
     color: var(--secondary-color);
 }
 
+/* ART */
+.art {
+    flex-flow: wrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section h3 {
+    font-size: 48px;
+    padding: 50px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.art img {
+    width: 30%;
+    height: 50vh;
+    object-fit: cover;
+    object-position: top;
+    padding-bottom: 60px;
+}
+
 
 
 
