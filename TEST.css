@@ -33,6 +33,7 @@ header {
 	flex-wrap: wrap;
 	justify-content: space-between;
     margin: 0 60px 40px 60px;
+    border-bottom: 5px solid var(--secondary-color);
 }
 
 header h1 a {
@@ -81,6 +82,7 @@ section {
     background-color: var(--secondary-color);
     position: relative;
 	display: flex;
+    flex-direction: row;
     margin: 0 60px 80px 60px;
 }
 
@@ -109,13 +111,14 @@ section p {
     color: var(--accent-color)
 }
 
-img {
+section img {
     width: 100%;
-    opacity: .7;
+    height: 700px;
     object-fit: cover;
+    opacity: .7;
     transition: .6s;
 }
 
-img:hover {
+section img:hover {
     opacity: 1;
 }
