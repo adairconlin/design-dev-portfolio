@@ -262,12 +262,6 @@ section p {
 }
 
 /* ART */
-.art {
-    flex-flow: wrap;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
 section h3 {
     font-size: 48px;
     padding: 50px 0;
@@ -275,10 +269,27 @@ section h3 {
     text-align: center;
 }
 
-.art img {
+.preview video {
+    margin: auto;
+    width: 70%;
+    padding-bottom: 50px;
+}
+
+.preview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.preview img {
     width: 30%;
     height: 50vh;
     object-fit: cover;
     object-position: top;
     padding-bottom: 60px;
+}
+
+.preview video {
+    width: 80%;
 }

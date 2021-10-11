@@ -3,11 +3,12 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Resume - Adair Conlin</title>
-        <link rel="icon" href="assets/media/images/signature.png" type="image/icon type">
+		<title>Art - Adair Conlin</title>
+		<link rel="icon" href="assets/media/images/signature.png" type="image/icon type">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 		<link rel="stylesheet" href="TEST.css">
 		<link rel="stylesheet" href="https://use.typekit.net/ehh0cgk.css">
+        <script src="assets/scripts/Design.js"></script>
 	</head>
 	<body>
         <header>
@@ -37,11 +38,48 @@
         </header>
 
         <section class="main-title">
-			<h2>Resume</h2>
+			<h2>Personal Art Projects</h2>
+
+            <div>
+                <button onclick="getId(this)" class="active" id="1">Art</button>
+                <button onclick="getId(this)" id="2">Animation</button>
+                <button onclick="getId(this)" id="3">Videography</button>
+            </div>
 		</section>
 
-        <section>
-            <h3>Coming soon</h3>
+        <section class="show" id="section 1">
+            <div class="preview">
+                <img src="assets/media/images/fourteenthgrave.png" />
+                <img src="assets/media/images/lizyrubin - portrait.png" />
+                <img src="assets/media/images/emma-lange.png" />
+                <img src="assets/media/images/Rogue Valkyrie.png" />
+                <img src="assets/media/images/Lust.png" />
+                <img src="assets/media/images/Odd Melissa.png" />
+                <img src="assets/media/images/chroma-comp.png" />
+                <img src="assets/media/images/Sage Remake.png" />
+                <img src="assets/media/images/Valkyrae export.png" />
+                <img src="assets/media/images/carving.png" />
+                <img src="assets/media/images/leshen.png" />
+                <img src="assets/media/images/Ciri - Witcher Fanart.png" />
+            </div>
+        </section>
+
+		<section class="hide" id="section 2">
+            <div class="preview">
+                <video width="100%" controls muted id="videoOutline">
+                    <source src="assets/media/anim/bug boy.mp4" type="video/mp4">
+                </video>
+                <video width="100%" controls id="videoOutline">
+                    <source src="assets/media/anim/Candy Corn.mp4" type="video/mp4">
+                </video>
+                <video width="100%" controls id="videoOutline">
+                    <source src="assets/media/anim/Bon Appetite.mp4" type="video/mp4">
+                </video>
+            </div>
+		</section>
+
+        <section class="hide" id="section 3">
+            <h3>Videography</h3>
         </section>
 
         <footer id="contact">
