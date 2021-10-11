@@ -81,12 +81,23 @@ footer a {
 }
 
 /* BODY */
+section {
+	position: relative;
+	display: flex;
+    flex-direction: row;
+    margin: 0 300px 50px 300px;
+}
+
+img {
+	width: 100%;
+}
+
 .hero {
     background-color: var(--accent-color);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 50px;
+    margin: 0 0 50px 0 !important;
     padding: 25px 300px 50px 300px;
 }
 
@@ -102,19 +113,15 @@ footer a {
     width: 90%;
 }
 
-.hero h3 {
+.hero h4 {
     color: var(--tertiary-color);
     font-size: 2em;
     width: 80%;
     margin-bottom: 20px;
 }
 
-section:not(:first-of-type) {
+.index {
     background-color: var(--secondary-color);
-    position: relative;
-	display: flex;
-    flex-direction: row;
-    margin: 0 300px 50px 300px;
 }
 
 section article {
@@ -133,7 +140,7 @@ section .right {
     padding: 10px 30px 20px 30px;
 }
 
-section a {
+.index a {
     font-size: 56px;
     color: var(--tertiary-color);
     text-decoration: none;
@@ -146,25 +153,21 @@ section p {
     color: var(--accent-color)
 }
 
-section img,
-section video {
-    width: 100%;
+.index img,
+.index video {
     height: 700px;
     object-fit: cover;
     opacity: .7;
     transition: .6s ease;
 }
 
-section img:hover,
-section video:hover {
+.index img:hover,
+.index video:hover {
     opacity: 1;
 }
 
 /* ABOUT SECTION - HOMEPAGE */
 #about {
-    background-color: var(--primary-color);
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     margin: 0 300px 10px 300; 
 }
@@ -180,35 +183,37 @@ section video:hover {
 }
 
 /* BRANDDESIGN.HTML */
-.design,
+.main-title,
 .show {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.design {
+.main-title {
     background-color: var(--accent-color) !important;
+    background-color: var(--accent-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 !important;
+    padding: 25px 100px 0 100px;
 }
 
-.show {
-    background-color: var(--primary-color) !important;
-}
-
-.design h2 {
+.main-title h2 {
     color: var(--secondary-color);
     font-size: 86px;
     margin: 64px;
     padding-bottom: 60px;
 }
 
-.design div {
+.main-title div {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
 }
 
-.design button {
+.main-title button {
     justify-content: center;
     margin: 0 10px;
     font-size: 42px;
@@ -219,11 +224,11 @@ section video:hover {
     border-radius: 10px 10px 0 0;
 }
 
-.design button:active {
+.main-title button:active {
     outline: none;
 }
 
-.design div .active {
+.main-title div .active {
     color: var(--accent-color);
     background-color: var(--primary-color);
     outline: none;
@@ -247,6 +252,7 @@ section video:hover {
 }
 
 .show p a {
+    color: var(--accent-color);
     font-size: 36px;
     transition: .5s ease;
 }
@@ -256,3 +262,23 @@ section video:hover {
 }
 
 /* ART */
+.art {
+    flex-flow: wrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section h3 {
+    font-size: 48px;
+    padding: 50px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.art img {
+    width: 30%;
+    height: 50vh;
+    object-fit: cover;
+    object-position: top;
+    padding-bottom: 60px;
+}

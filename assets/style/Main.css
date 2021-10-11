@@ -81,12 +81,23 @@ footer a {
 }
 
 /* BODY */
+section {
+	position: relative;
+	display: flex;
+    flex-direction: row;
+    margin: 0 300px 50px 300px;
+}
+
+img {
+	width: 100%;
+}
+
 .hero {
     background-color: var(--accent-color);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 50px;
+    margin: 0 0 50px 0 !important;
     padding: 25px 300px 50px 300px;
 }
 
@@ -102,19 +113,15 @@ footer a {
     width: 90%;
 }
 
-.hero h3 {
+.hero h4 {
     color: var(--tertiary-color);
     font-size: 2em;
     width: 80%;
     margin-bottom: 20px;
 }
 
-section:not(:first-of-type) {
+.index {
     background-color: var(--secondary-color);
-    position: relative;
-	display: flex;
-    flex-direction: row;
-    margin: 0 300px 50px 300px;
 }
 
 section article {
@@ -133,7 +140,7 @@ section .right {
     padding: 10px 30px 20px 30px;
 }
 
-section a {
+.index a {
     font-size: 56px;
     color: var(--tertiary-color);
     text-decoration: none;
@@ -146,25 +153,21 @@ section p {
     color: var(--accent-color)
 }
 
-section img,
-section video {
-    width: 100%;
+.index img,
+.index video {
     height: 700px;
     object-fit: cover;
     opacity: .7;
     transition: .6s ease;
 }
 
-section img:hover,
-section video:hover {
+.index img:hover,
+.index video:hover {
     opacity: 1;
 }
 
 /* ABOUT SECTION - HOMEPAGE */
 #about {
-    background-color: var(--primary-color);
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     margin: 0 300px 10px 300; 
 }
@@ -180,38 +183,40 @@ section video:hover {
 }
 
 /* BRANDDESIGN.HTML */
-.design,
+.main-title,
 .show {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.design {
+.main-title {
     background-color: var(--accent-color) !important;
+    background-color: var(--accent-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 !important;
+    padding: 25px 100px 0 100px;
 }
 
-.show {
-    background-color: var(--primary-color) !important;
-}
-
-.design h2 {
+.main-title h2 {
     color: var(--secondary-color);
     font-size: 86px;
     margin: 64px;
     padding-bottom: 60px;
 }
 
-.design div {
+.main-title div {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
 }
 
-.design button {
+.main-title button {
     justify-content: center;
     margin: 0 10px;
-    font-size: 36px;
+    font-size: 42px;
     padding: 0 25px;
     border: none;
     color: var(--secondary-color);
@@ -219,11 +224,11 @@ section video:hover {
     border-radius: 10px 10px 0 0;
 }
 
-.design button:active {
+.main-title button:active {
     outline: none;
 }
 
-.design div .active {
+.main-title div .active {
     color: var(--accent-color);
     background-color: var(--primary-color);
     outline: none;
@@ -247,6 +252,7 @@ section video:hover {
 }
 
 .show p a {
+    color: var(--accent-color);
     font-size: 36px;
     transition: .5s ease;
 }
@@ -257,213 +263,9 @@ section video:hover {
 
 
 
+
 /* NOT FIXED */
 /* MAIN PAGE */
-/* Button "Digital Portraits" */
-#buttcont {
-	margin: auto;
-	margin-bottom: 50px;
-	display: block;
-}
-
-#mybutton {
-	background-color: var(--primary-color);
-	color: var(--tertiary-color);
-	border: none;
-	font-size: 3vw;
-	margin: auto;
-	display: block;
-	padding: 0px;
-	padding-right: 30px;
-	padding-left: 30px;
-	transition: all ease 1s;
-}
-
-#mybutton:hover {
-	/* box-shadow: inset 500px 0 0 0 var(--tertiary-color); */
-	background-color: var(--tertiary-color);
-	color: var(--primary-color);
-}
-
-/* Slideshow */
-#slideCont {
-	max-width: 1300px;
-}
-
-#slides {
-	color: black;
-	background-color: black;
-}
-
-/* Overlay */
-#overDiv {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	transition: 1.5s ease;
-	margin: auto;
-}
-
-.container:hover #overDiv {
-	opacity: 1;
-}
-
-#overTxt {
-	color: var(--tertiary-color);
-	position: absolute;
-	font-size: 3.5vw;
-}
-
-
-/* Slideshow Images */
-#caroImg {
-	width: 50%;
-	display: block;
-	margin: auto;
-}
-#caroImgWicked {
-	width: 32%;
-	display: block;
-	margin: auto;
-}
-
-#caroImgRaven {
-	width: 52.5%;
-	display: block;
-	margin: auto;
-}
-
-#caroImgCarving {
-	width: 78%;
-	display: block;
-	margin: auto;
-}
-
-#caroImgLeshen {
-	width: 31.25%;
-	display: block;
-	margin: auto;
-}
-
-/* Slideshow Controls */
-.carousel-control-prev {
-    left: 0;
-    padding-right: 4em;
-}
-
-.carousel-control-next {
-	padding-left: 4em;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  color: solid yellow;
-  background-image: none;
-}
-
-.carousel-control-next-icon:after {
-  content: '>';
-  font-size: 3vw;
-  color: var(--tertiary-color);
-}
-
-.carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 3vw;
-  color: var(--tertiary-color);
-}
-
-#logoCont {
-	margin: 5em;
-}
-
-/* Design */
-#designSection {
-	margin: auto;
-	display: flex;
-}
-
-#designTitle {
-	width: 90%;
-	margin-bottom: 3em;
-}
-
-#designTitleMobile {
-	display: none;
-}
-
-#titleText {
-	color: var(--accent-color);
-	font-size: 4vw;
-}
-
-#designLine {
-	max-height: 3px;
-	margin-top: 3.5em;
-	margin-right: 2em;
-	margin-left: 2em;
-	width: 40%;
-}
-
-#mainText {
-	color: var(--accent-color);
-	font-size: 2vw;
-}
-
-#mainText em {
-	color: var(--tertiary-color);
-	font-style: normal;
-}
-
-#brandRow {
-	margin: auto;
-	display: flex;
-}
-
-#brandImg {
-	margin-left: 2em;
-	margin-right: 0em;
-	margin: auto;
-	display: flex;
-}
-
-#kiwiPreview {
-	width: 100%;
-	margin: auto;
-	display: flex;
-}
-
-#logoRow {
-	margin-top: 3em;
-	display: flex;
-}
-
-#waifuPreview {
-	width: 90%;
-	margin: auto;
-	display: flex;
-}
-
-#webRow {
-	margin-top: 3em;
-}
-
-#webImg {
-	margin-left: 5em;
-	margin: auto;
-	display: flex;
-}
-
-#webPreview {
-	width: 100%;
-	margin: auto;
-	display: flex;
-}
 
 /* Animation | Video Editing */
 #animationRow {
