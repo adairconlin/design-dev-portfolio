@@ -166,12 +166,12 @@ section video:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 0 350px 60px 350px; 
+    margin: 0 300px 10px 300; 
 }
 
 #about a {
-    color: var(--tertiary-color);
-    font-size: 2em;
+    color: var(--accent-color);
+    font-size: 64px;
     height: auto;
 }
 
