@@ -293,3 +293,22 @@ section h3 {
 .preview video {
     width: 80%;
 }
+
+/* ABOUT ME */
+.imgBG {
+    background-color: var(--secondary-color);
+}
+
+.about div {
+    display: flex;
+}
+
+.about img {
+    width: 100%;
+}
+
+.about p {
+    font-size: 28px;
+    line-height: 1.5;
+    padding: 20px 50px;
+}
