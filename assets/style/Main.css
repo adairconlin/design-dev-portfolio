@@ -518,7 +518,6 @@ section video:hover {
 	margin-bottom: 0.5em;
 	width: 60%;
 	transition: all ease 2s;
-	-webkit-transform: all ease 2s; 
 	-moz-transition: all ease 2s
 }
 

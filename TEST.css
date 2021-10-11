@@ -211,7 +211,7 @@ section video:hover {
 .design button {
     justify-content: center;
     margin: 0 10px;
-    font-size: 36px;
+    font-size: 42px;
     padding: 0 25px;
     border: none;
     color: var(--secondary-color);
@@ -254,3 +254,5 @@ section video:hover {
 .show p a:hover {
     color: var(--secondary-color);
 }
+
+/* ART */
