@@ -227,7 +227,7 @@ section p {
 .main-title button {
     justify-content: center;
     margin: 0 10px;
-    font-size: 42px;
+    font-size: 1.5vw;
     font-weight: bold;
     padding: 15px 25px;
     border: none;
