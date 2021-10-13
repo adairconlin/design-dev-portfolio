@@ -22,6 +22,7 @@ body {
 }
 
 a {
+    text-decoration: none;
     transition: .7s ease;
 }
 
@@ -42,6 +43,7 @@ header {
 header h1 a {
 	font-size: 28px;
 	font-weight: 500px;
+    letter-spacing: .1rem;
     color: var(--secondary-color);
 }
 
@@ -211,6 +213,7 @@ section p {
 .main-title h2 {
     color: var(--secondary-color);
     font-size: 4vw;
+    letter-spacing: .3rem;
     margin: 64px;
     padding-bottom: 60px;
 }
@@ -225,7 +228,8 @@ section p {
     justify-content: center;
     margin: 0 10px;
     font-size: 42px;
-    padding: 0 25px;
+    font-weight: bold;
+    padding: 15px 25px;
     border: none;
     color: var(--secondary-color);
     background-color: var(--accent-color);
