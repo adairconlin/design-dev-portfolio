@@ -23,7 +23,7 @@ body {
 
 a {
     text-decoration: none;
-    transition: .7s ease;
+    transition: .5s ease;
 }
 
 a:hover {
@@ -40,11 +40,25 @@ header {
     padding: 0 300px 0 300px;
 }
 
+header a, header h1 {
+    font-size: 1.5vw;
+    margin-bottom: 0;
+}
+
+
 header h1 a {
-	font-size: 28px;
 	font-weight: 500px;
     letter-spacing: .1rem;
     color: var(--secondary-color);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 1;
+    align-items: center;
+    margin-top: 1vh;
 }
 
 header nav ul {
@@ -53,20 +67,19 @@ header nav ul {
 	justify-content: space-around;
     align-items: center;
 	list-style: none;
-    margin-top: 5px;
+    margin-bottom: 0;
 }
 
 header nav ul li a {
     color: var(--secondary-color);
-    font-size: 28px;
-    padding: 20px;
+    padding: 0 1vw;
 }
 
 /* FOOTER */
 footer {
     background-color: var(--tertiary-color);
     display: flex;
-    flex-wrap: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     padding: 10px 60px 10px 60px;
@@ -354,4 +367,146 @@ section h3 {
 
 .about-main .about-text {
     width: 100%;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 1000px) {
+    /* Navigation Bar */
+    header {
+        padding: 0 10vw;
+    }
+
+    header a, header h1 {
+        font-size: 2.6vw;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 25px 10vw 50px 10vw;
+    }
+
+    .hero h2 {
+        font-size: 4vw;
+    }
+
+    .hero h4 {
+        font-size: 2.5vw;
+    }
+
+    /* Main Index Section */
+    .index {
+        margin: 0 2.6vw 50px 2.6vw;
+    }
+
+    .index, .index a, .index img {
+        height: 400px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 1vw 2.6vw;
+    }
+
+    footer a, footer h3 {
+        font-size: 2.2vw;
+        margin-bottom: 0;
+    }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    /* Navigation Bar */
+    header a, header h1 {
+        font-size: 3vw;
+    }
+
+    /* Main Index Section */
+    .index .right a, .index article a {
+        font-size: 6vw;
+    }
+
+    .index, .index a, .index img {
+        height: 400px;
+    }
+
+    /* Footer */
+    footer {
+        justify-content: space-between;
+    }
+
+    footer a, footer h3 {
+        font-size: 2.4vw;
+        margin-bottom: 0;
+    }
+    
+}      
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    /* Navigation Bar */
+    header {
+        padding: 0vw 6vw;
+    }
+
+    header a, header h1 {
+        font-size: 3vw;
+    }
+
+    header nav ul li a {
+        padding: 0vw 2vw;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 25px 6vw;
+        margin: 0px 0px 25px 0px !important;
+    }
+
+    .hero h1 {
+        font-size: 7vw;
+    }
+
+    .hero h2 {
+        font-size: 5vw;
+    }
+
+    .hero h4 {
+        font-size: 3.5vw;
+        width: 90%;
+    }
+
+    /* Main Index Section */
+    .index {
+        margin: 0 2.6vw 25px 2.6vw;
+    }
+
+    .index, .index a, .index img {
+        height: 300px;
+    }
+
+    section .right {
+        width: 55%;
+    }
+
+    section article {
+        width: 55%;
+    }
+
+    .index article {
+        margin-top: 20px;
+    }
+
+    .index article a, .index .right a {
+        font-size: 4.5vw;
+    }
+
+    .index article p, .index .right p {
+        font-size: 2.8vw;
+        margin-bottom: 0;
+    }
+
+    .footer {
+        padding: 0 6vw;
+    }
+
 }
