@@ -119,6 +119,7 @@ section article {
     flex: 1;
     top: 0;
     z-index: 9999;
+    max-width: 60%;
 }
 
 /* INDEX.HTML HERO SECTION */
@@ -219,7 +220,7 @@ section p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 0 !important;
+    margin: 0 0 50px 0 !important;
     padding: 25px 100px 0 100px;
 }
 
@@ -294,12 +295,6 @@ section h3 {
     text-align: center;
 }
 
-.preview video {
-    margin: auto;
-    width: 70%;
-    padding-bottom: 50px;
-}
-
 .preview {
     display: flex;
     flex-wrap: wrap;
@@ -315,8 +310,34 @@ section h3 {
     padding-bottom: 60px;
 }
 
-.preview video {
-    width: 80%;
+/* WEBDEVELOPMENT.HTML */
+.links {
+    display: flex;
+    justify-content: end;
+}
+
+.links .subtext-links a {
+    color: var(--tertiary-color);
+    font-size: 1vw;
+}
+
+.subtext-links {
+    margin-right: 1vw;
+    transition: .5s;
+}
+
+.links .subtext-links a:hover {
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.right .subtext-links {
+    margin-right: 0;
+    margin-left: 1vw;
+}
+
+.top {
+    top: 0;
 }
 
 /* ABOUTME.HTML */
@@ -395,7 +416,7 @@ section h3 {
 
     /* Main Index Section */
     .index {
-        margin: 0 2.6vw 50px 2.6vw;
+        margin: 2.6vw 50px 2.6vw;
     }
 
     .index, .index a, .index img {
