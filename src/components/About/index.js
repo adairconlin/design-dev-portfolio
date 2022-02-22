@@ -2,10 +2,6 @@ import React from "react";
 
 function About() {
 
-    function hoverImage(e) {
-        
-    }
-
     return (
         <main className="about">
             <div className="hover">

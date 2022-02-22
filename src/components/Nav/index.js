@@ -1,6 +1,22 @@
 import React from "react";
 
-function Nav() {
+function Nav(props) {
+    const {
+        setAboutSelected,
+        aboutSelected,
+        setPortfolioSelected,
+        portfolioSelected,
+    } = props;
+
+    function resetStates(event) {
+        setAboutSelected(false);
+        setPortfolioSelected(false);
+        if(event.target.textContent === "about") {
+            setAboutSelected(true);
+        } else if(event.target.textContent === "portfolio") {
+            setPortfolioSelected(true);
+        }
+    }
 
     return (
         <header>
@@ -9,8 +25,8 @@ function Nav() {
             </h3>
             <nav>
                 <ul className="hText sm-txt">
-                    <li className="accent">about</li>
-                    <li>portfolio</li>
+                    <li className={`${aboutSelected && "accent"}`} onClick={(event) => resetStates(event)}>about</li>
+                    <li className={`${portfolioSelected && "accent"}`} onClick={(event) => resetStates(event)}>portfolio</li>
                     <li>resume</li>
                     <li>contact</li>
                 </ul>
