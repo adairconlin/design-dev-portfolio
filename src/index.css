@@ -33,6 +33,7 @@ a {
 }
 
 ul {
+    padding: 0;
     list-style: none;
 }
 
@@ -67,6 +68,14 @@ ul {
     font-size: 1.4vw;
 }
 
+.prj-sub {
+    font-size: 22px;
+}
+
+.proj-link {
+    font-size: 18px;
+}
+
 .accent {
     color: var(--accent);
 }
@@ -88,6 +97,12 @@ nav ul, footer ul {
 
 nav ul li, footer ul li {
     margin-left: 70px;
+    transition: .5s ease;
+}
+
+nav ul li:hover, footer ul li:hover {
+    cursor: pointer;
+    color: var(--accent);
 }
 
 footer ul {
@@ -125,6 +140,8 @@ footer ul {
 /* Hover Image Transitions */
 .hover {
     position: relative;
+    height: 100%;
+    z-index: 10;
 }
 
 .colored {
@@ -137,4 +154,32 @@ footer ul {
 
 .colored:hover {
     opacity: 20%;
+}
+
+/* Portfolio and Projects */
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project, .portfolio .hover {
+    width: 442px;
+    height: 249px;
+}
+
+.project-hover {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    right: 0;
+    opacity: 0%;
+}
+
+.hover:hover .inner-img {
+    opacity: 20%;
+}
+
+.hover:hover .inner-div {
+    opacity: 100%;
 }

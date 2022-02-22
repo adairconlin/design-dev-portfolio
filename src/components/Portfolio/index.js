@@ -1,8 +1,12 @@
 import React from "react";
+import Project from "../Project";
 
 function Portfolio() {
+
     return (
-        <h1>My portfolio page</h1>
+        <main className="portfolio">
+            <Project></Project>
+        </main>
     )
 }
 
