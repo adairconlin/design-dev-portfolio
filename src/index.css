@@ -1,13 +1,140 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* My Colors */
+:root {
+    --pale: #EFE8E0;
+    --accent: #C8B6AA;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* General Styling */
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0px 100px;
+    padding: 0;
+    background: var(--pale);
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+main {
+    margin: 100px 150px;
+    flex: 1 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* My Adobe Fonts */
+.hText {
+    color: black;
+    font-family: halyard-text, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.hDisplay {
+    color: black;
+    font-family: halyard-display, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.lg-txt {
+    font-size: 64px;
+}
+
+.sm-txt {
+    font-size: 26px;
+}
+
+.lg-dis {
+    font-size: 36px;
+}
+
+.sm-dis {
+    font-size: 1.4vw;
+}
+
+.accent {
+    color: var(--accent);
+}
+
+/* Navigation and Footer */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+nav ul, footer ul {
+    display: flex;
+}
+
+nav ul li, footer ul li {
+    margin-left: 70px;
+}
+
+footer ul {
+    flex-direction: row-reverse;
+}
+
+/* About */
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about div:first-of-type {
+    margin-right: 100px;
+}
+
+.profile {
+    width: 450px;
+}
+
+.about h2, .about h3 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.about h3 {
+    transition: 1s;
+}
+
+.about h3:hover {
+    color: var(--accent);
+}
+
+/* Hover Image Transitions */
+.hover {
+    position: relative;
+}
+
+.colored {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s ease;
+    opacity: 75%;
+}
+
+.colored:hover {
+    opacity: 20%;
 }
