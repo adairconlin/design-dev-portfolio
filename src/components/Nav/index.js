@@ -6,15 +6,20 @@ function Nav(props) {
         aboutSelected,
         setPortfolioSelected,
         portfolioSelected,
+        setResumeSelected,
+        resumeSelected
     } = props;
 
     function resetStates(event) {
         setAboutSelected(false);
         setPortfolioSelected(false);
+        setResumeSelected(false);
         if(event.target.textContent === "about") {
             setAboutSelected(true);
         } else if(event.target.textContent === "portfolio") {
             setPortfolioSelected(true);
+        } else if(event.target.textContent === "resume") {
+            setResumeSelected(true);
         }
     }
 
@@ -27,7 +32,7 @@ function Nav(props) {
                 <ul className="hText sm-txt">
                     <li className={`${aboutSelected && "accent"}`} onClick={(event) => resetStates(event)}>about</li>
                     <li className={`${portfolioSelected && "accent"}`} onClick={(event) => resetStates(event)}>portfolio</li>
-                    <li>resume</li>
+                    <li className={`${resumeSelected && "accent"}`} onClick={(event) => resetStates(event)}>resume</li>
                     <li>contact</li>
                 </ul>
             </nav>
