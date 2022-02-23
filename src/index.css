@@ -160,7 +160,11 @@ footer ul {
 .portfolio {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+}
+
+.portfolio .hover:nth-last-child(-n+3) {
+    margin-top: 30px;
 }
 
 .project, .portfolio .hover {
@@ -169,6 +173,8 @@ footer ul {
 }
 
 .project-hover {
+    z-index: 10;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -176,10 +182,15 @@ footer ul {
     opacity: 0%;
 }
 
+.project-hover h1, .project-hover h2, .project-hover ul {
+    margin: 0px;
+}
+
 .hover:hover .inner-img {
-    opacity: 20%;
+    opacity: 10%;
 }
 
 .hover:hover .inner-div {
     opacity: 100%;
 }
+
