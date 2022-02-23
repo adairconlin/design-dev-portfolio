@@ -265,3 +265,162 @@ button {
     color: white !important;
     padding: 0px 30px;
 }
+
+/* MOBILE RESPONSIVENESS */
+/* Wider screens up to 2560 */
+@media screen and (min-width: 2270px) {
+    .project, .portfolio .hover {
+        width: 550px;
+        height: 309px;
+    }
+}
+
+/* Smaller screen changes */
+@media screen and (max-width: 1850px) {
+    main {
+        margin: 50px 75px
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    main {
+        margin: 25px 45px
+    }
+
+    .resume {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        margin: 0px 40px;
+    }
+
+    main {
+        margin: 10px 20px
+    }
+
+    nav ul li, footer ul li {
+        margin-left: 50px;
+    }
+
+    .profile {
+        width: 350px;
+    }
+
+    .lg {
+        font-size: 54px;
+    }
+
+    .md {
+        font-size: 30px;
+    }
+
+    .sm {
+        font-size: 24px;
+    }
+
+    .sm-flex {
+        font-size: 1.6vw;
+    }
+
+    .project, .portfolio .hover {
+        width: 768px;
+        height: 432px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .profile {
+        width: 200px;
+    }
+
+    .about div:first-of-type {
+        margin-right: 40px;
+    }
+
+    .lg {
+        font-size: 36px;
+    }
+
+    .md {
+        font-size: 24px;
+    }
+
+    .sm {
+        font-size: 18px;
+    }
+
+    .sm-flex {
+        font-size: 1.8vw;
+    }
+
+    .project, .portfolio .hover {
+        width: 550px;
+        height: 309px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    body {
+        margin: 0px 20px;
+    }
+
+    .about {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hover div:first-of-type {
+        margin-right: 0px;
+    }
+
+    .about div {
+        text-align: center;
+    }
+
+    .about div h2 {
+        font-size: 18px;
+    }
+
+    .sm {
+        font-size: 12px;
+    }
+
+    .sm-flex {
+        font-size: 16px;
+    }
+
+    .resume div {
+        flex-wrap: wrap;
+    }
+
+    .resume ul li {
+        font-size: 16px;
+    }
+
+    nav ul li, footer ul li {
+        margin-left: 20px;
+    }
+
+    .project, .portfolio .hover {
+        width: 500px;
+        height: 281px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .about div:first-of-type {
+        margin-right: 0px;
+    }
+    
+    .profile {
+        margin-bottom: 15px;
+    }
+
+    .project, .portfolio .hover {
+        width: 300px;
+        height: 169px;
+    }
+}
