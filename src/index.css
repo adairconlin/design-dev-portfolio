@@ -56,7 +56,15 @@ ul {
     font-size: 64px;
 }
 
+.lg {
+    font-size: 64px;
+}
+
 .sm-txt {
+    font-size: 26px;
+}
+
+.sm {
     font-size: 26px;
 }
 
@@ -64,7 +72,15 @@ ul {
     font-size: 36px;
 }
 
+.md {
+    font-size: 36px;
+}
+
 .sm-dis {
+    font-size: 1.4vw;
+}
+
+.sm-flex {
     font-size: 1.4vw;
 }
 
@@ -163,8 +179,8 @@ footer ul {
     justify-content: space-evenly;
 }
 
-.portfolio .hover:nth-last-child(-n+3) {
-    margin-top: 30px;
+.portfolio .hover {
+    margin-bottom: 15px;
 }
 
 .project, .portfolio .hover {
@@ -209,4 +225,13 @@ footer ul {
     font-size: 24px;
 }
 
+/* Resume */
+.resume div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume h1, .resume h2, .resume ul {
+    margin-bottom: 0;
+}
 
