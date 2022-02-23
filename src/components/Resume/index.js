@@ -11,7 +11,7 @@ function Resume() {
     return (
         <animated.main className="resume" style={props}>
             <animated.h1 className="hText lg" style={xAnim}>My current skills.</animated.h1>
-            <a href="./resume.pdf" download="resume.pdf">Download Full Resume</a>
+            <a href="../../assets/resume.pdf" download="resume.pdf">Download Full Resume</a>
             <div>
                 <animated.section style={frontAnim}>
                     <h2 className="hText md accent">Front End</h2>
