@@ -140,7 +140,6 @@ footer ul {
 /* Hover Image Transitions */
 .hover {
     position: relative;
-    height: 100%;
     z-index: 10;
 }
 
@@ -236,3 +235,33 @@ footer ul {
     margin-left: 30px;
 }
 
+/* Contact */
+.contact form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.contact form input, .contact form textarea {
+    border: 2px solid var(--accent);
+    padding: 0 5px;
+}
+
+.contact form p, .contact p {
+    margin: 0;
+}
+
+.contact form .limit {
+    margin-left: auto;
+}
+
+button {
+    background-color: var(--accent);
+    border: none;
+    color: white !important;
+    padding: 0px 30px;
+}

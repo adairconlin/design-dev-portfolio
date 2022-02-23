@@ -7,19 +7,24 @@ function Nav(props) {
         setPortfolioSelected,
         portfolioSelected,
         setResumeSelected,
-        resumeSelected
+        resumeSelected,
+        setContactSelected,
+        contactSelected
     } = props;
 
     function resetStates(event) {
         setAboutSelected(false);
         setPortfolioSelected(false);
         setResumeSelected(false);
+        setContactSelected(false);
         if(event.target.textContent === "about") {
             setAboutSelected(true);
         } else if(event.target.textContent === "portfolio") {
             setPortfolioSelected(true);
         } else if(event.target.textContent === "resume") {
             setResumeSelected(true);
+        } else if (event.target.textContent === "contact") {
+            setContactSelected(true);
         }
     }
 
@@ -33,7 +38,7 @@ function Nav(props) {
                     <li className={`${aboutSelected && "accent"}`} onClick={(event) => resetStates(event)}>about</li>
                     <li className={`${portfolioSelected && "accent"}`} onClick={(event) => resetStates(event)}>portfolio</li>
                     <li className={`${resumeSelected && "accent"}`} onClick={(event) => resetStates(event)}>resume</li>
-                    <li>contact</li>
+                    <li className={`${contactSelected && "accent"}`} onClick={(event) => resetStates(event)}>contact</li>
                 </ul>
             </nav>
         </header>
