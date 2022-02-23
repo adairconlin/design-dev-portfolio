@@ -194,3 +194,19 @@ footer ul {
     opacity: 100%;
 }
 
+.hover .inner-div .prj-link {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.hover .inner-div .prj-link li {
+    transition: .5s ease;
+}
+
+.hover .inner-div .prj-link li:hover {
+    font-size: 24px;
+}
+
+
