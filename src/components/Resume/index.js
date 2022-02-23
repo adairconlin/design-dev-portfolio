@@ -5,6 +5,7 @@ function Resume() {
     return (
         <main className="resume">
             <h1 className="hText lg">My current skills.</h1>
+            <a href="./resume.pdf" download="resume.pdf">Download Full Resume</a>
             <div>
                 <section>
                     <h2 className="hText md accent">Front End</h2>
