@@ -50,8 +50,9 @@ function Project() {
         <>
             {images.map((image) => (
                 <div className="hover">
+                <a href={image.projectLink}>
                     <div className="colored project-hover inner-div">
-                        <h1 className="hText md"><a href={image.projectLink}>{image.title}</a></h1>
+                        <h1 className="hText md">{image.title}</h1>
                         <h2 className="hText prj-sub">{image.subtitle}</h2>
                         <ul className="hDisplay prj-link">
                             <li><a href={image.projectLink}>View Project</a></li>
@@ -69,7 +70,7 @@ function Project() {
                         alt={image.title}
                         key={`${image.title} original`}
                         className="project colored inner-img"
-                    />
+                    /></a>
                 </div>
             ))}
         </>
