@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useSpring, animated, config } from "react-spring";
 import { validateEmail } from "../../utils/helpers" ;
 
 function Contact() {
@@ -37,9 +38,12 @@ function Contact() {
         let currentLength = e.target.value.length;
         setMessageState(500 - currentLength);
     }
+    const props = useSpring({ to: { opacity: 1}, from: { opacity: 0 }, config: config.gentle })
+    const labelAnim = useSpring({ to: { opacity: 1, x: 0 }, from: { opacity: 0, x: -150 }, config: config.gentle})
+    const inputAnim = useSpring({ to: { opacity: 1, x: 0 }, from: { opacity: 0, x: 150 }, config: config.gentle})
 
     return (
-        <main className="contact">
+        <animated.main className="contact" style={props}>
             <h1 className="hText lg">Contact me!</h1>
 
             {errorMessage && (
@@ -50,21 +54,21 @@ function Contact() {
 
             <form onSubmit={handleSubmit}>
                 <div>
-                    <label className="hText md accent" htmlFor="name" defaultValue={name}>Name:</label>
-                    <input className="hDisplay sm" type="text" name="name" onBlur={handleChange} />
+                    <animated.label className="hText md accent" htmlFor="name" defaultValue={name} style={labelAnim}>Name:</animated.label>
+                    <animated.input className="hDisplay sm" type="text" name="name" onBlur={handleChange} style={inputAnim} />
                 </div>
                 <div>
-                    <label className="hText md accent" htmlFor="email" defaultValue={email}>Email:</label>
-                    <input className="hDisplay sm" type="email" name="email" onBlur={handleChange} />
+                    <animated.label className="hText md accent" htmlFor="email" defaultValue={email} style={labelAnim}>Email:</animated.label>
+                    <animated.input className="hDisplay sm" type="email" name="email" onBlur={handleChange} style={inputAnim} />
                 </div>
                 <div>
-                    <label className="hText md accent" htmlFor="message" defaultValue={message}>Message:</label>
-                    <textarea className="hDisplay sm" name="message" rows="4" onBlur={handleChange} onChange={handleLimit} />
+                    <animated.label className="hText md accent" htmlFor="message" defaultValue={message} style={labelAnim}>Message:</animated.label>
+                    <animated.textarea className="hDisplay sm" name="message" rows="4" onBlur={handleChange} onChange={handleLimit} style={inputAnim} />
                     <p className="hDisplay sm limit accent">{messageState} characters left.</p>
                 </div>
                 <button className="hDisplay sm" type="submit">send</button>
             </form>
-        </main>
+        </animated.main>
     )
 }
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { useSpring, animated, config } from "react-spring";
 
 function Nav(props) {
     const {
@@ -27,9 +28,10 @@ function Nav(props) {
             setContactSelected(true);
         }
     }
+    const yAnim = useSpring({ to: { opacity: 1, y: 0 }, from: { opacity: 0, y: -50 }, config: config.slow})
 
     return (
-        <header>
+        <animated.header style={yAnim}>
             <h3 className="hText sm">
                 <a href="/">Adair Conlin</a>
             </h3>
@@ -41,7 +43,7 @@ function Nav(props) {
                     <li className={`${contactSelected && "accent"}`} onClick={(event) => resetStates(event)}>contact</li>
                 </ul>
             </nav>
-        </header>
+        </animated.header>
     )
 }
 

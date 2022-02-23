@@ -1,13 +1,19 @@
 import React from "react";
+import { useSpring, animated, config } from "react-spring";
 
 function Resume() {
+    const props = useSpring({ to: { opacity: 1}, from: { opacity: 0 }, config: config.gentle });
+    const xAnim = useSpring({ to: { y: 0 }, from: { y: -50 }, config: config.gentle});
+    const frontAnim = useSpring({ to: { y: 0 }, from: { y: 50 }, config: config.gentle});
+    const backAnim = useSpring({ to: { y: 0 }, from: { y: 50 }, config: config.gentle, delay: 100});
+    const techAnim = useSpring({ to: { y: 0 }, from: { y: 50 }, config: config.gentle, delay: 200});
 
     return (
-        <main className="resume">
-            <h1 className="hText lg">My current skills.</h1>
+        <animated.main className="resume" style={props}>
+            <animated.h1 className="hText lg" style={xAnim}>My current skills.</animated.h1>
             <a href="./resume.pdf" download="resume.pdf">Download Full Resume</a>
             <div>
-                <section>
+                <animated.section style={frontAnim}>
                     <h2 className="hText md accent">Front End</h2>
                     <ul className="hDisplay sm">
                         <li><span>/* </span>HTML5 <span>*/</span></li>
@@ -20,8 +26,8 @@ function Resume() {
                         <li><span>/* </span>Responsive web design <span>*/</span></li>
                         <li><span>/* </span>Accessible web design <span>*/</span></li>
                     </ul>
-                </section>
-                <section>
+                </animated.section>
+                <animated.section style={backAnim}>
                     <h2 className="hText md accent">Back End</h2>
                     <ul className="hDisplay sm">
                         <li><span>// </span>Node.js</li>
@@ -31,8 +37,8 @@ function Resume() {
                         <li><span>// </span>NoSQL</li>
                         <li><span>// </span>MongoDB</li>
                     </ul>
-                </section>
-                <section>
+                </animated.section>
+                <animated.section style={techAnim}>
                     <h2 className="hText md accent">Technology</h2>
                     <ul className="hDisplay sm tech">
                         <li>Git</li>
@@ -41,9 +47,9 @@ function Resume() {
                         <li>VSCode</li>
                         <li>Adobe XD</li>
                     </ul>
-                </section>
+                </animated.section>
             </div>
-        </main>
+        </animated.main>
     )
 }
 
