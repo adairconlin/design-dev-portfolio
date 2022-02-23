@@ -52,32 +52,16 @@ ul {
     font-weight: 300;
 }
 
-.lg-txt {
-    font-size: 64px;
-}
-
 .lg {
     font-size: 64px;
-}
-
-.sm-txt {
-    font-size: 26px;
 }
 
 .sm {
     font-size: 26px;
 }
 
-.lg-dis {
-    font-size: 36px;
-}
-
 .md {
     font-size: 36px;
-}
-
-.sm-dis {
-    font-size: 1.4vw;
 }
 
 .sm-flex {

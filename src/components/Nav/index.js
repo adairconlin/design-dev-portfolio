@@ -25,11 +25,11 @@ function Nav(props) {
 
     return (
         <header>
-            <h3 className="hText sm-txt">
+            <h3 className="hText sm">
                 <a href="/">Adair Conlin</a>
             </h3>
             <nav>
-                <ul className="hText sm-txt">
+                <ul className="hText sm">
                     <li className={`${aboutSelected && "accent"}`} onClick={(event) => resetStates(event)}>about</li>
                     <li className={`${portfolioSelected && "accent"}`} onClick={(event) => resetStates(event)}>portfolio</li>
                     <li className={`${resumeSelected && "accent"}`} onClick={(event) => resetStates(event)}>resume</li>

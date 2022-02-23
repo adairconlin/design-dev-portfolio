@@ -4,7 +4,7 @@ function Footer() {
 
     return (
         <footer>
-            <ul className="hText sm-txt">
+            <ul className="hText sm">
                 <li>email</li>
                 <li>github</li>
                 <li>linkedin</li>

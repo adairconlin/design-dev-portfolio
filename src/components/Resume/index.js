@@ -4,10 +4,10 @@ function Resume() {
 
     return (
         <main className="resume">
-            <h1 className="hText lg-txt">My current skills.</h1>
+            <h1 className="hText lg">My current skills.</h1>
             <div>
                 <section>
-                    <h2 className="hText lg-dis accent">Front End</h2>
+                    <h2 className="hText lg accent">Front End</h2>
                     <ul className="hDisplay sm">
                         <li>HTML5</li>
                         <li>CSS</li>
@@ -21,7 +21,7 @@ function Resume() {
                     </ul>
                 </section>
                 <section>
-                    <h2 className="hText lg-dis accent">Back End</h2>
+                    <h2 className="hText lg accent">Back End</h2>
                     <ul className="hDisplay sm">
                         <li>Node.js</li>
                         <li>Express.js</li>
@@ -32,7 +32,7 @@ function Resume() {
                     </ul>
                 </section>
                 <section>
-                    <h2 className="hText lg-dis accent">Technology</h2>
+                    <h2 className="hText lg accent">Technology</h2>
                     <ul className="hDisplay sm">
                         <li>Git</li>
                         <li>GitHub</li>
