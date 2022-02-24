@@ -214,13 +214,8 @@ footer ul {
     justify-content: space-between;
 }
 
-.resume a {
-    text-decoration: underline;
-    transition: .5s ease;
-}
-
-.resume a:hover {
-    color: black;
+.resume button {
+    margin-top: 30px;
 }
 
 .resume h1, .resume h2, .resume ul {
@@ -268,11 +263,17 @@ footer ul {
     margin-left: auto;
 }
 
-button {
+button, button a {
     background-color: var(--accent);
     border: none;
-    color: white !important;
-    padding: 0px 30px;
+    color: var(--pale) !important;
+    padding: 10px 20px;
+    transition: .5s ease;
+}
+
+button:hover, button a:hover {
+    color: black !important;
+    cursor: pointer;
 }
 
 /* MOBILE RESPONSIVENESS */

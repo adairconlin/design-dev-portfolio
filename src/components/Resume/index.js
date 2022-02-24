@@ -48,7 +48,7 @@ function Resume() {
                     </ul>
                 </animated.section>
             </div>
-            <a href="./resume.pdf" download="resume.pdf" className="hDisplay accent sm">Download Full Resume</a>
+            <button><a href="./resume.pdf" download="resume.pdf" className="hDisplay sm">Download Full Resume</a></button>
         </animated.main>
     )
 }

@@ -63,7 +63,7 @@ function Contact() {
                 </div>
                 <div>
                     <animated.label className="hText md accent" htmlFor="message" defaultValue={message} style={labelAnim}>Message:</animated.label>
-                    <animated.textarea className="hDisplay sm" name="message" rows="4" onBlur={handleChange} onChange={handleLimit} style={inputAnim} />
+                    <animated.textarea className="hDisplay sm" name="message" rows="4" maxlength="500" onBlur={handleChange} onChange={handleLimit} style={inputAnim} />
                     <p className="hDisplay sm limit accent">{messageState} characters left.</p>
                 </div>
                 <button className="hDisplay sm" type="submit">send</button>
