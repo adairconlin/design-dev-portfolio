@@ -155,7 +155,40 @@ footer ul {
     opacity: 20%;
 }
 
-/* Portfolio and Projects */
+/* Portfolio */
+.portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.portfolio .project {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio .project h1 {
+    margin-bottom: 0px;
+}
+
+.portfolio .project p {
+    margin-top: 5px;
+}
+
+.portfolio .project h1:hover {
+    color: var(--accent);
+    cursor: pointer;
+}
+
+.portfolio section:last-of-type {
+    width: 60%;
+}
+
+.portfolio section img {
+    width: 100%;
+}
+
+/* Portfolio and Projects
 .portfolio {
     display: flex;
     flex-wrap: wrap;
@@ -206,7 +239,7 @@ footer ul {
 
 .hover .inner-div .prj-link li:hover {
     font-size: 24px;
-}
+} */
 
 /* Resume */
 .resume div {
