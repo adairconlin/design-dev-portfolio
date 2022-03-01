@@ -11,7 +11,6 @@ function Resume() {
     return (
         <animated.main className="resume" style={props}>
             <animated.h1 className="hText lg" style={xAnim}>My current skills.</animated.h1>
-            <a href="./resume.pdf" download="resume.pdf">Download Full Resume</a>
             <div>
                 <animated.section style={frontAnim}>
                     <h2 className="hText md accent">Front End</h2>
@@ -20,6 +19,7 @@ function Resume() {
                         <li><span>/* </span>CSS <span>*/</span></li>
                         <li><span>/* </span>JavaScript <span>*/</span></li>
                         <li><span>/* </span>React.js <span>*/</span></li>
+                        <li><span>/* </span>React-Spring <span>*/</span></li>
                         <li><span>/* </span>jQuery <span>*/</span></li>
                         <li><span>/* </span>Bootstrap <span>*/</span></li>
                         <li><span>/* </span>Bulma <span>*/</span></li>
@@ -49,6 +49,7 @@ function Resume() {
                     </ul>
                 </animated.section>
             </div>
+            <button><a href="./resume.pdf" download="resume.pdf" className="hDisplay sm">Download Full Resume</a></button>
         </animated.main>
     )
 }

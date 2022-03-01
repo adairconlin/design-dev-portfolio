@@ -6,22 +6,24 @@ function Portfolio() {
         {
             src: "rate-my-bootcamp",
             description: "CRUD Application",
-            projectLink: "https://whispering-scrubland-52233.herokuapp.com/"
+            projectLink: "https://whispering-scrubland-52233.herokuapp.com/",
+            githubLink: "https://github.com/adairconlin/rate-my-bootcamp"
         },
         {
             src: "tech-blog",
             description: "CRUD Application",
-            projectLink: "https://whispering-scrubland-52233.herokuapp.com/"
+            projectLink: "https://sheltered-badlands-90401.herokuapp.com/",
+            githubLink: "https://github.com/adairconlin/tech-blog-application"
         },
         {
             src: "e-commerce",
             description: "CLI Back End Application",
-            projectLink: "https://github.com/adairconlin/e-commerce-backend",
+            githubLink: "https://github.com/adairconlin/e-commerce-backend",
         },
         {
             src: "team-gen",
             description: "CLI Back End Application",
-            projectLink: "https://github.com/adairconlin/team-profile-generator"
+            githubLink: "https://github.com/adairconlin/team-profile-generator"
         },
     ];
 
@@ -43,32 +45,35 @@ function Portfolio() {
                     <a href="https://whispering-scrubland-52233.herokuapp.com/">
                         <h1 className={`hText md ${activeProject === 1 && "accent"}`} onMouseEnter={() => hoverProject(1)}>Rate My Bootcamp</h1>
                     </a>
-                    <p className={`hDisplay sm-flex ${activeProject === 1 && "show"}`}>// CRUD Application | Collaborative</p>
+                    <p className="hDisplay sm-flex">// CRUD Application | Collaborative</p>
                 </div>
                 <div className="project">
                     <a href="https://whispering-scrubland-52233.herokuapp.com/">
                         <h1 className={`hText md ${activeProject === 2 && "accent"}`} onMouseEnter={() => hoverProject(2)}>Tech Blog Application</h1>
                     </a>
-                    <p className={`hDisplay sm-flex ${activeProject === 2 && "show"}`}>// CRUD Application</p>
+                    <p className="hDisplay sm-flex">// CRUD Application</p>
                 </div>
                 <div className="project">
                     <a href="https://github.com/adairconlin/e-commerce-backend">
                         <h1 className={`hText md ${activeProject === 3 && "accent"}`} onMouseEnter={() => hoverProject(3)}>E-Commerce Back End</h1>
                     </a>
-                    <p className={`hDisplay sm-flex ${activeProject === 3 && "show"}`}>// CLI Back End Application</p>
+                    <p className="hDisplay sm-flex">// CLI Back End Application</p>
                 </div>
                 <div className="project">
                     <a href="https://github.com/adairconlin/team-profile-generator">
                         <h1 className={`hText md ${activeProject === 4 && "accent"}`} onMouseEnter={() => hoverProject(4)}>Team Generator</h1>
                     </a>
-                    <p className={`hDisplay sm-flex ${activeProject === 4 && "show"}`}>// CLI Back End Application</p>
-
+                    <p className="hDisplay sm-flex">// CLI Back End Application</p>
                 </div>
             </section>
 
             <section>
             {transition((style, item) =>
                 item ? <animated.div style={style}>
+                            <div>
+                                {projects[item-1].projectLink && <a href={projects[item-1].projectLink} className="hDisplay sm">View Project</a>}
+                                <a href={projects[item-1].githubLink} className="hDisplay sm">View GitHub Repo</a>
+                            </div>
                             <div className="hover">
                                 <a href={projects[item-1].projectLink}>
                                     <img src={require(`../../assets/colored/${projects[item-1].src}.png`)} alt="Website homepage" />

@@ -173,6 +173,7 @@ footer ul {
 
 .portfolio .project p {
     margin-top: 5px;
+    margin-bottom: 0px;
 }
 
 .portfolio .project h1:hover {
@@ -187,59 +188,6 @@ footer ul {
 .portfolio section img {
     width: 100%;
 }
-
-/* Portfolio and Projects
-.portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.portfolio .hover {
-    margin-bottom: 15px;
-}
-
-.project, .portfolio .hover {
-    width: 442px;
-    height: 249px;
-}
-
-.project-hover {
-    z-index: 10;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    right: 0;
-    opacity: 0%;
-}
-
-.project-hover h1, .project-hover h2, .project-hover ul {
-    margin: 0px;
-}
-
-.hover:hover .inner-img {
-    opacity: 5%;
-}
-
-.hover:hover .inner-div {
-    opacity: 100%;
-}
-
-.hover .inner-div .prj-link {
-    margin-top: 25px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.hover .inner-div .prj-link li {
-    transition: .5s ease;
-}
-
-.hover .inner-div .prj-link li:hover {
-    font-size: 24px;
-} */
 
 /* Resume */
 .resume div {
@@ -262,6 +210,10 @@ footer ul {
 }
 .resume li:hover span {
     color: black;
+}
+
+.resume button {
+    float: right;
 }
 
 .tech {
@@ -292,22 +244,20 @@ footer ul {
     margin-left: auto;
 }
 
-button {
+button, button a {
     background-color: var(--accent);
     border: none;
-    color: white !important;
-    padding: 0px 30px;
+    color: var(--pale) !important;
+    padding: 10px 20px;
+    transition: .5s ease;
+}
+
+button:hover, button a:hover {
+    color: black !important;
+    cursor: pointer;
 }
 
 /* MOBILE RESPONSIVENESS */
-/* Wider screens up to 2560 */
-@media screen and (min-width: 2270px) {
-    .project, .portfolio .hover {
-        width: 550px;
-        height: 309px;
-    }
-}
-
 /* Smaller screen changes */
 @media screen and (max-width: 1850px) {
     main {
@@ -357,11 +307,6 @@ button {
     .sm-flex {
         font-size: 1.6vw;
     }
-
-    .project, .portfolio .hover {
-        width: 768px;
-        height: 432px;
-    }
 }
 
 @media screen and (max-width: 780px) {
@@ -389,9 +334,8 @@ button {
         font-size: 1.8vw;
     }
 
-    .project, .portfolio .hover {
-        width: 550px;
-        height: 309px;
+    .portfolio h1 {
+        font-size: 20px;
     }
 }
 
@@ -437,9 +381,25 @@ button {
         margin-left: 20px;
     }
 
-    .project, .portfolio .hover {
-        width: 500px;
-        height: 281px;
+    .portfolio h1 {
+        font-size: 16px;
+    }
+
+    .portfolio {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .portfolio h1 {
+        font-size: 28px;
+    }
+
+    .portfolio p {
+        font-size: 18px;
+    }
+
+    .portfolio section:last-of-type {
+        display: none;
     }
 }
 
@@ -450,10 +410,5 @@ button {
     
     .profile {
         margin-bottom: 15px;
-    }
-
-    .project, .portfolio .hover {
-        width: 300px;
-        height: 169px;
     }
 }
