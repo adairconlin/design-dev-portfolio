@@ -19,6 +19,7 @@ function Resume() {
                         <li><span>/* </span>CSS <span>*/</span></li>
                         <li><span>/* </span>JavaScript <span>*/</span></li>
                         <li><span>/* </span>React.js <span>*/</span></li>
+                        <li><span>/* </span>React-Spring <span>*/</span></li>
                         <li><span>/* </span>jQuery <span>*/</span></li>
                         <li><span>/* </span>Bootstrap <span>*/</span></li>
                         <li><span>/* </span>Bulma <span>*/</span></li>

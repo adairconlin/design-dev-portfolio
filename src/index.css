@@ -155,57 +155,38 @@ footer ul {
     opacity: 20%;
 }
 
-/* Portfolio and Projects */
+/* Portfolio */
 .portfolio {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.portfolio .hover {
-    margin-bottom: 15px;
-}
-
-.project, .portfolio .hover {
-    width: 442px;
-    height: 249px;
-}
-
-.project-hover {
-    z-index: 10;
-    margin-top: 50px;
+.portfolio .project {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    right: 0;
-    opacity: 0%;
 }
 
-.project-hover h1, .project-hover h2, .project-hover ul {
-    margin: 0px;
+.portfolio .project h1 {
+    margin-bottom: 0px;
 }
 
-.hover:hover .inner-img {
-    opacity: 5%;
+.portfolio .project p {
+    margin-top: 5px;
+    margin-bottom: 0px;
 }
 
-.hover:hover .inner-div {
-    opacity: 100%;
+.portfolio .project h1:hover {
+    color: var(--accent);
+    cursor: pointer;
 }
 
-.hover .inner-div .prj-link {
-    margin-top: 25px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.portfolio section:last-of-type {
+    width: 60%;
 }
 
-.hover .inner-div .prj-link li {
-    transition: .5s ease;
-}
-
-.hover .inner-div .prj-link li:hover {
-    font-size: 24px;
+.portfolio section img {
+    width: 100%;
 }
 
 /* Resume */
@@ -233,6 +214,10 @@ footer ul {
 }
 .resume li:hover span {
     color: black;
+}
+
+.resume button {
+    float: right;
 }
 
 .tech {
@@ -277,14 +262,6 @@ button:hover, button a:hover {
 }
 
 /* MOBILE RESPONSIVENESS */
-/* Wider screens up to 2560 */
-@media screen and (min-width: 2270px) {
-    .project, .portfolio .hover {
-        width: 550px;
-        height: 309px;
-    }
-}
-
 /* Smaller screen changes */
 @media screen and (max-width: 1850px) {
     main {
@@ -334,11 +311,6 @@ button:hover, button a:hover {
     .sm-flex {
         font-size: 1.6vw;
     }
-
-    .project, .portfolio .hover {
-        width: 768px;
-        height: 432px;
-    }
 }
 
 @media screen and (max-width: 780px) {
@@ -366,9 +338,8 @@ button:hover, button a:hover {
         font-size: 1.8vw;
     }
 
-    .project, .portfolio .hover {
-        width: 550px;
-        height: 309px;
+    .portfolio h1 {
+        font-size: 20px;
     }
 }
 
@@ -414,9 +385,25 @@ button:hover, button a:hover {
         margin-left: 20px;
     }
 
-    .project, .portfolio .hover {
-        width: 500px;
-        height: 281px;
+    .portfolio h1 {
+        font-size: 16px;
+    }
+
+    .portfolio {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .portfolio h1 {
+        font-size: 28px;
+    }
+
+    .portfolio p {
+        font-size: 18px;
+    }
+
+    .portfolio section:last-of-type {
+        display: none;
     }
 }
 
@@ -427,10 +414,5 @@ button:hover, button a:hover {
     
     .profile {
         margin-bottom: 15px;
-    }
-
-    .project, .portfolio .hover {
-        width: 300px;
-        height: 169px;
     }
 }
