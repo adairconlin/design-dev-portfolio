@@ -33,7 +33,7 @@ function Nav(props) {
     return (
         <animated.header style={yAnim}>
             <h3 className="hText sm">
-                <a href="/">Adair Conlin</a>
+                <a href="/my-react-portfolio">Adair Conlin</a>
             </h3>
             <nav>
                 <ul className="hText sm">

@@ -70,15 +70,15 @@ function Portfolio() {
             <section>
             {transition((style, item) =>
                 item ? <animated.div style={style}>
-                            <div>
-                                {projects[item-1].projectLink && <a href={projects[item-1].projectLink} className="hDisplay sm">View Project</a>}
-                                <a href={projects[item-1].githubLink} className="hDisplay sm">View GitHub Repo</a>
-                            </div>
                             <div className="hover">
-                                <a href={projects[item-1].projectLink}>
+                                <a href={`${projects[item-1].projectLink ? projects[item-1].projectLink : projects[item-1].githubLink} `}>
                                     <img src={require(`../../assets/colored/${projects[item-1].src}.png`)} alt="Website homepage" />
                                     <img src={require(`../../assets/original/${projects[item-1].src}.png`)} alt="Website homepage" className="colored" />
                                 </a>
+                            </div>
+                            <div className="viewLinks">
+                                {projects[item-1].projectLink && <button><a href={projects[item-1].projectLink} className="hDisplay sm">View Project</a></button>}
+                                <button><a href={projects[item-1].githubLink} className="hDisplay sm">View GitHub Repo</a></button>
                             </div>
                         </animated.div> : "")} 
             </section>
