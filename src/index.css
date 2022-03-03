@@ -189,6 +189,11 @@ footer ul {
     width: 100%;
 }
 
+.portfolio .viewLinks {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 /* Resume */
 .resume div {
     display: flex;
