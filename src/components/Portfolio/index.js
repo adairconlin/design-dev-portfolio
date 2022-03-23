@@ -4,16 +4,16 @@ import { useTransition, animated, config } from "react-spring";
 function Portfolio() {
     const projects = [
         {
+            src: "tempo",
+            description: "MERN Stack Application",
+            projectLink: "https://tempo-musician-search.herokuapp.com/",
+            githubLink: "https://github.com/mwegter95/project-3-tempo"
+        },
+        {
             src: "rate-my-bootcamp",
             description: "CRUD Application",
             projectLink: "https://whispering-scrubland-52233.herokuapp.com/",
             githubLink: "https://github.com/adairconlin/rate-my-bootcamp"
-        },
-        {
-            src: "tech-blog",
-            description: "CRUD Application",
-            projectLink: "https://sheltered-badlands-90401.herokuapp.com/",
-            githubLink: "https://github.com/adairconlin/tech-blog-application"
         },
         {
             src: "e-commerce",
@@ -42,16 +42,16 @@ function Portfolio() {
         <main className="portfolio">
             <section>
                 <div className="project">       
-                    <a href="https://whispering-scrubland-52233.herokuapp.com/">
-                        <h1 className={`hText md ${activeProject === 1 && "accent"}`} onMouseEnter={() => hoverProject(1)}>Rate My Bootcamp</h1>
+                    <a href="https://tempo-musician-search.herokuapp.com/">
+                        <h1 className={`hText md ${activeProject === 1 && "accent"}`} onMouseEnter={() => hoverProject(1)}>Tempo</h1>
                     </a>
-                    <p className="hDisplay sm-flex">// CRUD Application | Collaborative</p>
+                    <p className="hDisplay sm-flex">// Mern Stack Application | Collaborative</p>
                 </div>
                 <div className="project">
                     <a href="https://whispering-scrubland-52233.herokuapp.com/">
-                        <h1 className={`hText md ${activeProject === 2 && "accent"}`} onMouseEnter={() => hoverProject(2)}>Tech Blog Application</h1>
+                        <h1 className={`hText md ${activeProject === 2 && "accent"}`} onMouseEnter={() => hoverProject(2)}>Rate My Bootcamp</h1>
                     </a>
-                    <p className="hDisplay sm-flex">// CRUD Application</p>
+                    <p className="hDisplay sm-flex">// CRUD Application | Collaborative</p>
                 </div>
                 <div className="project">
                     <a href="https://github.com/adairconlin/e-commerce-backend">
