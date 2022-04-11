@@ -3,7 +3,8 @@ import Nav from "./components/Nav";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Resume from "./components/Resume";
-import Contact from "./components/Contact";
+//import Contact from "./components/Contact";
+import ContactTemp from "./components/ContactTemp";
 import Footer from "./components/Footer";
 import Error from "./components/Error";
 
@@ -29,7 +30,7 @@ function App() {
       aboutSelected ? (<About />) 
       : portfolioSelected ? (<Portfolio />)
       : resumeSelected ? (<Resume />)
-      : contactSelected ? (<Contact />)
+      : contactSelected ? (<ContactTemp />)
       :<Error />
       }
       <Footer></Footer>
