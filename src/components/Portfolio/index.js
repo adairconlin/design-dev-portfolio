@@ -42,25 +42,25 @@ function Portfolio() {
         <main className="portfolio">
             <section>
                 <div className="project">       
-                    <a href="https://tempo-musician-search.herokuapp.com/">
+                    <a href="https://tempo-musician-search.herokuapp.com/" target="_blank">
                         <h1 className={`hText md ${activeProject === 1 && "accent"}`} onMouseEnter={() => hoverProject(1)}>Tempo</h1>
                     </a>
                     <p className="hDisplay sm-flex">// Mern Stack Application | Collaborative</p>
                 </div>
                 <div className="project">
-                    <a href="https://whispering-scrubland-52233.herokuapp.com/">
+                    <a href="https://whispering-scrubland-52233.herokuapp.com/" target="_blank">
                         <h1 className={`hText md ${activeProject === 2 && "accent"}`} onMouseEnter={() => hoverProject(2)}>Rate My Bootcamp</h1>
                     </a>
                     <p className="hDisplay sm-flex">// CRUD Application | Collaborative</p>
                 </div>
                 <div className="project">
-                    <a href="https://github.com/adairconlin/e-commerce-backend">
+                    <a href="https://github.com/adairconlin/e-commerce-backend" target="_blank">
                         <h1 className={`hText md ${activeProject === 3 && "accent"}`} onMouseEnter={() => hoverProject(3)}>E-Commerce Back End</h1>
                     </a>
                     <p className="hDisplay sm-flex">// CLI Back End Application</p>
                 </div>
                 <div className="project">
-                    <a href="https://github.com/adairconlin/team-profile-generator">
+                    <a href="https://github.com/adairconlin/team-profile-generator" target="_blank">
                         <h1 className={`hText md ${activeProject === 4 && "accent"}`} onMouseEnter={() => hoverProject(4)}>Team Generator</h1>
                     </a>
                     <p className="hDisplay sm-flex">// CLI Back End Application</p>
@@ -71,14 +71,14 @@ function Portfolio() {
             {transition((style, item) =>
                 item ? <animated.div style={style}>
                             <div className="hover">
-                                <a href={`${projects[item-1].projectLink ? projects[item-1].projectLink : projects[item-1].githubLink} `}>
+                                <a href={`${projects[item-1].projectLink ? projects[item-1].projectLink : projects[item-1].githubLink} `} target="_blank">
                                     <img src={require(`../../assets/colored/${projects[item-1].src}.png`)} alt="Website homepage" />
                                     <img src={require(`../../assets/original/${projects[item-1].src}.png`)} alt="Website homepage" className="colored" />
                                 </a>
                             </div>
                             <div className="viewLinks">
-                                {projects[item-1].projectLink && <button><a href={projects[item-1].projectLink} className="hDisplay sm">View Project</a></button>}
-                                <button><a href={projects[item-1].githubLink} className="hDisplay sm">View GitHub Repo</a></button>
+                                {projects[item-1].projectLink && <button><a href={projects[item-1].projectLink} className="hDisplay sm" target="_blank">View Project</a></button>}
+                                <button><a href={projects[item-1].githubLink} className="hDisplay sm" target="_blank">View GitHub Repo</a></button>
                             </div>
                         </animated.div> : "")} 
             </section>
